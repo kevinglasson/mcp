@@ -2,6 +2,7 @@
 
 ## Coding Tutorials and cheatsheets:
 [Bit Manipulation](https://github.com/mxeng/mcp-docs/blob/master/bit_manipulation.md) writing to ports; setting, clearing and toggling bits; bit shift notation; config registers
+[Input](https://github.com/mxeng/mcp-docs/blob/master/input.md) digital input, switch and button wiring, analog input with the ADC
 
 [Atmel ATmega2560 Datasheet](http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf)
 
