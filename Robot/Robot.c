@@ -11,16 +11,14 @@
 
 
 //file scope variables
-
+static char serial_string[200] = {0};
 
 int main(void)
 {
     //variable declarations
     
     //initialisation section, runs once
-    serial0_init(); //initialise serial subsystem
-    //put your initialisation code here
-	
+    	
 	_delay_ms(10); //some delay may be required
 	
 	while(1)//main loop
