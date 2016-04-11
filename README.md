@@ -14,7 +14,7 @@
 [Lab C](https://github.com/mxeng/mcp-docs/blob/master/labs/lab-c.md) -
 [Lab D](https://github.com/mxeng/mcp-docs/blob/master/labs/lab-d.md) -
 [Lab E](https://github.com/mxeng/mcp-docs/blob/master/labs/lab-e.md) -
-[Lab F](https://github.com/mxeng/mcp-docs/blob/master/labs/lab-e.md)
+[Lab F](https://github.com/mxeng/mcp-docs/blob/master/labs/lab-f.md)
 
 ## Microcontroller Project Repository
 This repository contains the code for the second year mechatronics unit microcontroller project. Hit the link above or "Download Zip" button in the upper right to get the code.
