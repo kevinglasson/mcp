@@ -1,43 +1,49 @@
 <UserSettings>
 	<ApplicationIdentity version="10.0"/>
 	<ToolsOptions>
-		<ToolsOptionsCategory name="Environment" RegisteredName="Environment">
-			<ToolsOptionsSubCategory name="ProjectsAndSolution" RegisteredName="ProjectsAndSolution" PackageName="Visual Studio Environment Package">
-				<PropertyValue name="ProjectsLocation">%vsspv_visualstudio_dir%\6.2</PropertyValue>
-				<PropertyValue name="PromptForRenameSymbol">true</PropertyValue>
-				<PropertyValue name="TrackFileSelectionInExplorer">true</PropertyValue>
-				<PropertyValue name="ShowOutputWindowBeforeBuild">true</PropertyValue>
-				<PropertyValue name="OnRunWhenErrors">4</PropertyValue>
-				<PropertyValue name="OnRunWhenOutOfDate">4</PropertyValue>
-				<PropertyValue name="AlwaysShowSolutionNode">true</PropertyValue>
-				<PropertyValue name="ProjectItemTemplatesLocation">%vsspv_visualstudio_dir%\Templates\ItemTemplates</PropertyValue>
-				<PropertyValue name="OnlySaveStartupProjectsAndDependencies">true</PropertyValue>
-				<PropertyValue name="ShowAdvancedBuildConfigurations">true</PropertyValue>
-				<PropertyValue name="DefaultBehaviorForStartupProjects">1</PropertyValue>
-				<PropertyValue name="OnRunOrPreview">0</PropertyValue>
-				<PropertyValue name="MSBuildOutputVerbosity">4</PropertyValue>
-				<PropertyValue name="ProjectTemplatesLocation">%vsspv_visualstudio_dir%\Templates\ProjectTemplates</PropertyValue>
-				<PropertyValue name="ShowTaskListAfterBuild">true</PropertyValue>
-				<PropertyValue name="ConcurrentBuilds">8</PropertyValue>
-				<PropertyValue name="SaveNewProjects">true</PropertyValue>
-			</ToolsOptionsSubCategory>
-		</ToolsOptionsCategory>
+		<ToolsOptionsCategory name="Environment" RegisteredName="Environment"/>
 	</ToolsOptions>
 	<Category name="Environment_Group" RegisteredName="Environment_Group">
 		<Category name="Environment_ExternalTools" Category="{E8FAE9E8-FBA2-4474-B134-AB0FFCFB291D}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_ExternalTools" PackageName="Visual Studio Environment Package">
-			<PropertyValue name="Flash ATmega2560 on COM4 (auto reset).Command">C:\Python34\python.exe</PropertyValue>
-			<PropertyValue name="Flash ATmega2560 on COM4 (auto reset).Arguments">"C:\Users\Public\Documents\Microcontroller Project\auto_reset_and_upload_arduino_2560.py" COM4 "$(ProjectDir)Release\$(TargetName).hex"</PropertyValue>
-			<PropertyValue name="Flash ATmega2560 on COM4 (auto reset).InitialDirectory"/>
-			<PropertyValue name="Flash ATmega2560 on COM4 (auto reset).SourceKeyName"/>
-			<PropertyValue name="Flash ATmega2560 on COM4 (auto reset).UseOutputWindow">true</PropertyValue>
-			<PropertyValue name="Flash ATmega2560 on COM4 (auto reset).PromptForArguments">false</PropertyValue>
-			<PropertyValue name="Flash ATmega2560 on COM4 (auto reset).CloseOnExit">true</PropertyValue>
-			<PropertyValue name="Flash ATmega2560 on COM4 (auto reset).IsGUIapp">false</PropertyValue>
-			<PropertyValue name="Flash ATmega2560 on COM4 (auto reset).SaveAllDocs">true</PropertyValue>
-			<PropertyValue name="Flash ATmega2560 on COM4 (auto reset).UseTaskList">false</PropertyValue>
-			<PropertyValue name="Flash ATmega2560 on COM4 (auto reset).Unicode">false</PropertyValue>
-			<PropertyValue name="Flash ATmega2560 on COM4 (auto reset).Package">{00000000-0000-0000-0000-000000000000}</PropertyValue>
-			<PropertyValue name="Flash ATmega2560 on COM4 (auto reset).NameID">0</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM4.Command">C:\Python34\python.exe</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM4.Arguments">"C:\Users\Public\Documents\Microcontroller Project\auto_reset_and_upload_arduino_2560.py" COM4 "$(ProjectDir)Release\$(TargetName).hex"</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM4.InitialDirectory"/>
+			<PropertyValue name="Flash ATmega2560 on COM4.SourceKeyName"/>
+			<PropertyValue name="Flash ATmega2560 on COM4.UseOutputWindow">true</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM4.PromptForArguments">false</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM4.CloseOnExit">true</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM4.IsGUIapp">false</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM4.SaveAllDocs">true</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM4.UseTaskList">false</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM4.Unicode">false</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM4.Package">{00000000-0000-0000-0000-000000000000}</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM4.NameID">0</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM5.Command">C:\Python34\python.exe</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM5.Arguments">"C:\Users\Public\Documents\Microcontroller Project\auto_reset_and_upload_arduino_2560.py" COM5 "$(ProjectDir)Release\$(TargetName).hex"</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM5.InitialDirectory"/>
+			<PropertyValue name="Flash ATmega2560 on COM5.SourceKeyName"/>
+			<PropertyValue name="Flash ATmega2560 on COM5.UseOutputWindow">true</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM5.PromptForArguments">false</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM5.CloseOnExit">true</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM5.IsGUIapp">false</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM5.SaveAllDocs">true</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM5.UseTaskList">false</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM5.Unicode">false</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM5.Package">{00000000-0000-0000-0000-000000000000}</PropertyValue>
+			<PropertyValue name="Flash ATmega2560 on COM5.NameID">0</PropertyValue>
+			<PropertyValue name="Flash ATmega1280 on COM14.Command">C:\Users\Public\Documents\Microcontroller Project\avrdude.exe</PropertyValue>
+			<PropertyValue name="Flash ATmega1280 on COM14.Arguments">-C"C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -F -v -p atmega1280 -c arduino -P\\.\COM14 -b57600 -D -Uflash:w:"$(ProjectDir)Release\$(ItemFileName).hex":i</PropertyValue>
+			<PropertyValue name="Flash ATmega1280 on COM14.InitialDirectory"/>
+			<PropertyValue name="Flash ATmega1280 on COM14.SourceKeyName"/>
+			<PropertyValue name="Flash ATmega1280 on COM14.UseOutputWindow">true</PropertyValue>
+			<PropertyValue name="Flash ATmega1280 on COM14.PromptForArguments">false</PropertyValue>
+			<PropertyValue name="Flash ATmega1280 on COM14.CloseOnExit">true</PropertyValue>
+			<PropertyValue name="Flash ATmega1280 on COM14.IsGUIapp">false</PropertyValue>
+			<PropertyValue name="Flash ATmega1280 on COM14.SaveAllDocs">true</PropertyValue>
+			<PropertyValue name="Flash ATmega1280 on COM14.UseTaskList">false</PropertyValue>
+			<PropertyValue name="Flash ATmega1280 on COM14.Unicode">false</PropertyValue>
+			<PropertyValue name="Flash ATmega1280 on COM14.Package">{00000000-0000-0000-0000-000000000000}</PropertyValue>
+			<PropertyValue name="Flash ATmega1280 on COM14.NameID">0</PropertyValue>
 			<PropertyValue name="Flash ATmega2560 on COM4 (manual reset).Command">C:\Users\Public\Documents\Microcontroller Project\avrdude.exe</PropertyValue>
 			<PropertyValue name="Flash ATmega2560 on COM4 (manual reset).Arguments">-C"C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -F -v -p atmega2560 -c stk500v2 -P\\.\COM4 -b115200 -D -Uflash:w:"$(ProjectDir)Release\$(TargetName).hex":i</PropertyValue>
 			<PropertyValue name="Flash ATmega2560 on COM4 (manual reset).InitialDirectory"/>
@@ -51,20 +57,7 @@
 			<PropertyValue name="Flash ATmega2560 on COM4 (manual reset).Unicode">false</PropertyValue>
 			<PropertyValue name="Flash ATmega2560 on COM4 (manual reset).Package">{00000000-0000-0000-0000-000000000000}</PropertyValue>
 			<PropertyValue name="Flash ATmega2560 on COM4 (manual reset).NameID">0</PropertyValue>
-			<PropertyValue name="Flash ATmega1280 on COM14.Command">I:\mcp-robot-master\avrdude.exe</PropertyValue>
-			<PropertyValue name="Flash ATmega1280 on COM14.Arguments">-C"C:\Program Files (x86)\Arduino\hardware\tools\avr\etc\avrdude.conf" -F -v -p atmega1280 -c arduino -P\\.\COM14 -b57600 -D -Uflash:w:"$(ProjectDir)Release\$(ItemFileName).hex":i</PropertyValue>
-			<PropertyValue name="Flash ATmega1280 on COM14.InitialDirectory"/>
-			<PropertyValue name="Flash ATmega1280 on COM14.SourceKeyName"/>
-			<PropertyValue name="Flash ATmega1280 on COM14.UseOutputWindow">false</PropertyValue>
-			<PropertyValue name="Flash ATmega1280 on COM14.PromptForArguments">false</PropertyValue>
-			<PropertyValue name="Flash ATmega1280 on COM14.CloseOnExit">true</PropertyValue>
-			<PropertyValue name="Flash ATmega1280 on COM14.IsGUIapp">false</PropertyValue>
-			<PropertyValue name="Flash ATmega1280 on COM14.SaveAllDocs">true</PropertyValue>
-			<PropertyValue name="Flash ATmega1280 on COM14.UseTaskList">false</PropertyValue>
-			<PropertyValue name="Flash ATmega1280 on COM14.Unicode">false</PropertyValue>
-			<PropertyValue name="Flash ATmega1280 on COM14.Package">{00000000-0000-0000-0000-000000000000}</PropertyValue>
-			<PropertyValue name="Flash ATmega1280 on COM14.NameID">0</PropertyValue>
-			<PropertyValue name="ToolNames">Flash ATmega2560 on COM4 (auto reset), Flash ATmega2560 on COM4 (manual reset), Flash ATmega1280 on COM14</PropertyValue>
+			<PropertyValue name="ToolNames">Flash ATmega2560 on COM4, Flash ATmega2560 on COM5, Flash ATmega1280 on COM14, Flash ATmega2560 on COM4 (manual reset)</PropertyValue>
 		</Category>
 		<Category name="Environment_KeyBindings" Category="{F09035F1-80D2-4312-8EC4-4D354A4BCB4C}" Package="{DA9FB551-C724-11d0-AE1F-00A0C90FFFC3}" RegisteredName="Environment_KeyBindings" PackageName="Visual Studio Environment Package">
 			<Version>10.0.0.0</Version>
