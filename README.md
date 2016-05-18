@@ -1,8 +1,9 @@
 ## Hit [Download Zip](https://github.com/mxeng/mcp/archive/master.zip) above to get the latest code!
 
-## Coding Tutorials and cheatsheets:
-- [Bit Manipulation](https://github.com/mxeng/mcp-docs/blob/master/bit_manipulation.md) writing to ports; setting, clearing and toggling bits; bit shift notation; config registers
+## Tutorials:
+- [Bit Manipulation and Digital Output](https://github.com/mxeng/mcp-docs/blob/master/bit_manipulation.md)
 - [Input](https://github.com/mxeng/mcp-docs/blob/master/input.md) digital input, wiring buttons and switches, analogue input with the ADC
+- [Differential drive from joystick inputs](https://github.com/mxeng/mcp-docs/blob/master/tutorials/motor_drive.md)
 
 [Atmel ATmega2560 Datasheet](http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf)
 
@@ -16,7 +17,7 @@
 [Lab E](https://github.com/mxeng/mcp-docs/blob/master/labs/lab-e.md) -
 [Lab F](https://github.com/mxeng/mcp-docs/blob/master/labs/lab-f.md) - 
 [Lab G](https://github.com/mxeng/mcp-docs/blob/master/labs/lab-g.md) -
-[**Lab H**](https://github.com/mxeng/mcp-docs/blob/master/labs/lab-h.md)
+[Lab H](https://github.com/mxeng/mcp-docs/blob/master/labs/lab-h.md)
 
 ## Microcontroller Project Repository
 This repository contains the code for the second year mechatronics unit microcontroller project. Hit the link above or "Download Zip" button in the upper right to get the code.
