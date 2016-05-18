@@ -2,7 +2,7 @@
 
 ## Tutorials:
 - [Bit Manipulation and Digital Output](https://github.com/mxeng/mcp-docs/blob/master/bit_manipulation.md)
-- [Input](https://github.com/mxeng/mcp-docs/blob/master/input.md) digital input, wiring buttons and switches, analogue input with the ADC
+- [Digital and Analogue Input](https://github.com/mxeng/mcp-docs/blob/master/input.md)
 - [Differential drive from joystick inputs](https://github.com/mxeng/mcp-docs/blob/master/tutorials/motor_drive.md)
 
 [Atmel ATmega2560 Datasheet](http://www.atmel.com/Images/Atmel-2549-8-bit-AVR-Microcontroller-ATmega640-1280-1281-2560-2561_datasheet.pdf)
