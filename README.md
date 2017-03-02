@@ -5,8 +5,8 @@
 [Arduino Mega Pin Mapping](https://www.arduino.cc/en/uploads/Hacking/PinMap2560big.png)
 
 ## Tutorials:
-- [Bit Manipulation and Digital Output](https://github.com/mxeng/mcp-docs/blob/master/bit_manipulation.md)
-- [Digital and Analogue Input](https://github.com/mxeng/mcp-docs/blob/master/input.md)
+- [Bit Manipulation and Digital Output](https://github.com/mxeng/mcp-docs/blob/master/tutorials/bit_manipulation.md)
+- [Digital and Analogue Input](https://github.com/mxeng/mcp-docs/blob/master/tutorials/input.md)
 - [Differential drive from joystick inputs](https://github.com/mxeng/mcp-docs/blob/master/tutorials/motor_drive.md)
 
 
