@@ -11,7 +11,6 @@ static uint8_t serial_byte_in = 0; // Serial byte in
 
 int main(void)
 {
-
     // Variable declarations
 
 	// ADC readings

@@ -10,7 +10,6 @@ static uint32_t last_send_ms = 0; // Last time a msg was sent
 static uint8_t serial_fsm_state = 0; // State of fsm
 static uint8_t serial_byte_in = 0; // Serial byte in
 
-// main
 int main(void)
 {
 	// Variable declarations
@@ -23,7 +22,7 @@ int main(void)
 	serial0_init(); // Initialise serial0 subsystem for debugging (USB)
 	serial2_init(); // Initialise serial2 subsystem for comms (XBee)
 	adc_init(); // Initialise ADC
-	lcd_init(); //initialise 
+	lcd_init(); //initialise
 	milliseconds_init(); // Initialise timer one to track milliseconds
 	_delay_ms(10);
 
@@ -33,7 +32,7 @@ int main(void)
 	{
 		//sprintf(serial_string, "INFO: %d \n", serial_fsm_state);
 		//serial0_print_string(serial_string);
-		
+
         // Get the current time in ms
 		current_ms = milliseconds;
 
@@ -50,7 +49,7 @@ int main(void)
             // Send message
             send_to_robot(&msg_out);
 		}
-		
+
         // Read serial
         if(UCSR2A & (1<<RXC2)) // Checks for new serial byte
         {
@@ -58,14 +57,12 @@ int main(void)
         }
 
         // Process message
-        //TODO: do whatever we need to do with the data from the robot, i.e.
-        // create strings to send to the LCD
         proc_msg(&msg_in);
-		
+
 		// Write to the LCD
 		write_lcd(&msg_in);
 	}
-	return(1); // If infinite loop breaks return 1, i.e. error occured
+	return(1);
 }
 
 void construct_msg(FiveByteMsg* msg_out,
@@ -90,10 +87,10 @@ void send_to_robot(FiveByteMsg* msg_out)
 void read_serial(FiveByteMsg* temp_msg_in, FiveByteMsg* msg_in)
 {
 	serial_byte_in = UDR2; // Store serial byte
-	
+
 	sprintf(serial_string, "%u \n",serial_byte_in);
 	serial0_print_string(serial_string);
-	
+
 	switch(serial_fsm_state) // Switch on the current state
 	{
 		// Continue waiting for START_BYTE
@@ -164,30 +161,30 @@ int revert_to_sensor_val(uint8_t converted_num)
     return value;
 }
 
-void proc_msg(FiveByteMsg* msg_in)
+void proc_msg(FiveByteMsg* msg_in, LcdMsg* lcd_msg)
 {
-    msg_in->byte1 = revert_to_sensor_val(msg_in->byte1);
-    msg_in->byte2 = revert_to_sensor_val(msg_in->byte2);
-    msg_in->byte3 = revert_to_sensor_val(msg_in->byte3);
+    lcd_msg->byte1 = revert_to_sensor_val(msg_in->byte1);
+    lcd_msg->byte2 = revert_to_sensor_val(msg_in->byte2);
+    lcd_msg->byte3 = revert_to_sensor_val(msg_in->byte3);
 }
 
 void write_lcd(FiveByteMsg* msg_in)
 {
     // Home the cursor
     lcd_home();
-    		
+
     // Create string
     sprintf(lcd_string, "L_S:%3u R_S:%3u", msg_in->byte1, msg_in->byte2);
-	
+
 	// Send string
 	lcd_puts(lcd_string);
-	
+
 	// Create String
 	sprintf(lcd_string, "Long_S:%3u", msg_in->byte3);
-	
+
 	// Set cursor to line 2 and send string
 	lcd_goto(LINE_2);
-    		
+
     // print the string on the LCD
     lcd_puts(lcd_string);
 }

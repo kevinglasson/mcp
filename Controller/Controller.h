@@ -46,6 +46,18 @@ typedef struct FiveByteMsg
 } FiveByteMsg;
 #endif
 
+#ifndef LCDMSG
+#define LCDMSG
+typedef struct LcdMsg
+{
+    uint16_t byte1;
+	uint16_t byte2;
+	uint16_t byte3;
+	uint16_t byte4;
+	uint16_t byte5;
+} LcdMsg;
+#endif
+
 // Function Prototypes
 void construct_msg(FiveByteMsg*, uint16_t, uint16_t);
 void send_to_robot(FiveByteMsg*); // Send data to robot over serial
