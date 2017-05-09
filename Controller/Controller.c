@@ -22,17 +22,15 @@ int main(void)
 	serial0_init(); // Initialise serial0 subsystem for debugging (USB)
 	serial2_init(); // Initialise serial2 subsystem for comms (XBee)
 	adc_init(); // Initialise ADC
-	lcd_init(); //initialise
+	lcd_init(); // Initialise
 	milliseconds_init(); // Initialise timer one to track milliseconds
 	_delay_ms(10);
 
     FiveByteMsg msg_out = {0}, msg_in = {0}, temp_msg_in = {0};
+    LcdMsg lcd_out = {0}
 
 	while(1)
 	{
-		//sprintf(serial_string, "INFO: %d \n", serial_fsm_state);
-		//serial0_print_string(serial_string);
-
         // Get the current time in ms
 		current_ms = milliseconds;
 
@@ -88,8 +86,8 @@ void read_serial(FiveByteMsg* temp_msg_in, FiveByteMsg* msg_in)
 {
 	serial_byte_in = UDR2; // Store serial byte
 
-	sprintf(serial_string, "%u \n",serial_byte_in);
-	serial0_print_string(serial_string);
+	// sprintf(serial_string, "%u \n",serial_byte_in);
+	// serial0_print_string(serial_string);
 
 	switch(serial_fsm_state) // Switch on the current state
 	{
@@ -140,8 +138,8 @@ void read_serial(FiveByteMsg* temp_msg_in, FiveByteMsg* msg_in)
 	}
 	if(serial_byte_in == START_BYTE)
 	{
-		sprintf(serial_string, "DFUCK \n");
-		serial0_print_string(serial_string);
+		// sprintf(serial_string, "DFUCK \n");
+		// serial0_print_string(serial_string);
 		serial_fsm_state = 1; // Wait for first parameter
 	}
 }
@@ -151,13 +149,17 @@ uint8_t convert_to_8_bit(uint16_t adc_num)
 {
     uint8_t converted_out;
     converted_out = ((adc_num * 253.0) / 1023);
+    if converted_out > 253
+    {
+        converted_out = 253;
+    }
     return converted_out;
 }
 
 int revert_to_sensor_val(uint8_t converted_num)
 {
     int value;
-    value = (converted_num * 1023) / 253;
+    value = ((converted_num * 1023) / 253.0);
     return value;
 }
 

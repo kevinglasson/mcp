@@ -31,7 +31,8 @@ int main(void)
 
 	while(1)
 	{
-		current_ms = milliseconds;
+        // Get current_ms
+        current_ms = milliseconds;
 
         // Get ADC readings
         r_short_sens = adc_read(0); // Right joystick vertical axis
@@ -42,7 +43,7 @@ int main(void)
         construct_msg(&msg_out, r_short_sens, l_short_sens, long_sens);
 
         // Only send after at least 100ms
-        if(current_ms - last_send_ms >= 1000)
+        if(current_ms - last_send_ms >= 100)
         {
             // Send message
             send_to_controller(&msg_out);
@@ -144,21 +145,18 @@ void read_serial(FiveByteMsg* temp_msg_in, FiveByteMsg* msg_in)
 int convert_to_compare_val(uint16_t converted_num)
 {
     int compare_val;
-    compare_val = ((converted_num * 1023.0) / 253) + 1000;
+    compare_val = (((converted_num * 1023.0) / 253) + 1000);
     return compare_val;
 }
 
 uint8_t convert_to_8_bit(uint16_t adc_num)
 {
     uint8_t converted_out;
-	if (adc_num != 0)
-	{
-		converted_out = ((adc_num * 253.0) / 1023);
-	}
-	else
-	{
-		converted_out = 0;
-	}
+    converted_out = ((adc_num * 253.0) / 1023);
+    if converted_out > 253
+    {
+        converted_out = 253;
+    }
     return converted_out;
 }
 
