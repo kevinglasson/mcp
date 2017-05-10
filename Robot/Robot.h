@@ -58,7 +58,7 @@ typedef struct CompareMsg
 
 // Function Prototypes
 void construct_msg(FiveByteMsg*, uint16_t, uint16_t, uint16_t);
-void send_to_controller(); // Send data to controller over serial
+void send_to_controller(FiveByteMsg*); // Send data to controller over serial
 void read_serial(FiveByteMsg*, FiveByteMsg*); // Read data from serial
 int convert_to_compare_val(uint16_t);
 void proc_msg(FiveByteMsg*, CompareMsg*);

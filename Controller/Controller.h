@@ -63,5 +63,5 @@ void construct_msg(FiveByteMsg*, uint16_t, uint16_t);
 void send_to_robot(FiveByteMsg*); // Send data to robot over serial
 void read_serial(FiveByteMsg*, FiveByteMsg*); // Read data from serial
 uint8_t convert_to_8_bit(uint16_t); // ADC value conversion for sending
-void proc_msg(FiveByteMsg* msg_in); // Process msg for writing to LCD
-void write_lcd(FiveByteMsg* msg_in); // Write msg to LCD
+void proc_msg(FiveByteMsg*, LcdMsg*); // Process msg for writing to LCD
+void write_lcd(LcdMsg*); // Write msg to LCD
